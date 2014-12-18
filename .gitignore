@@ -1,1 +1,10 @@
+__pycache__/
+*.py[cod]
+
+# Virtual environment repository
 env/
+
+# Django stuff
+*.log
+*.db
+db.sqlite3
