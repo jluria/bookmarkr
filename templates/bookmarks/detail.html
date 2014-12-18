@@ -1,0 +1,9 @@
+<h2>Here is a list of bookmarked links in the {{ list.name }} list</h2>
+
+<ul>
+{% for link in links %}
+    <li>{{ link.name }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'index' %}">Go back to the lists list</a>
