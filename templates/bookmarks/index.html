@@ -1,4 +1,5 @@
 <h2>Below are all the lists of fun bookmarks created by someone using this app!</h2>
+<a href="{% url 'create_list' %}">Add a new list!</a>
 <ul>
 {% for list in lists %}
 <li><a href="{% url 'detail' list.id %}">{{ list.name }}</a></li>

@@ -11,12 +11,11 @@ class Link(models.Model):
         return self.name
 
 class List(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, help_text="Name Your List:")
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
-    links = models.ManyToManyField(Link)
+    links = models.ManyToManyField(Link,
+        help_text="Select existing links to add to the list:")
 
     def __str__(self):
         return self.name
-
-# Create your models here.
