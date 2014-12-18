@@ -13,3 +13,6 @@ def detail(request, list_id):
     all_links = l.links.all()
 
     return render(request, 'bookmarks/detail.html', {'list': l, 'links': all_links})
+
+def create(request):
+    pass
