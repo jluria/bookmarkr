@@ -6,5 +6,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'bookmarkr.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^bookmarks/', include('bookmarks.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
