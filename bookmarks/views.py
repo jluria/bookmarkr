@@ -15,11 +15,10 @@ def detail(request, list_id):
     return render(request, 'bookmarks/detail.html', {'list': l, 'links': all_links})
 
 def create_list(request):
-
     if request.method == 'POST':
-        form = ListForm(request.POST) # A form bound to the POST data
+        form = ListForm(request.POST)
 
-        if form.is_valid(): # All validation rules pass
+        if form.is_valid():
             form.save(commit=True)
             return index(request)
         else:
