@@ -3,9 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from accounts.models import AccountUser
 from django.template import RequestContext
 from django.contrib.auth import authenticate, login
-from django.views.decorators.csrf import csrf_exempt
 
-@csrf_exempt
 def user_login(request):
     context = RequestContext(request)
 

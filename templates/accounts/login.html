@@ -1,6 +1,6 @@
 <h1>Sign Into Bookmarkr Here</h1>
 
-<form method="post" action="/">
+<form method="post" action="/">{% csrf_token %}
   <div>
     <label for="internal_id">Internal ID:</label>
     <input type="internal_id" name="internal_id" />
