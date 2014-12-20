@@ -8,4 +8,4 @@ class AccountUser(models.Model):
     approval_date = models.DateField()
 
     def __str__(self):
-        return self.user
+        return self.user.username
